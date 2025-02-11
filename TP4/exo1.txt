@@ -1,0 +1,17 @@
+# 1. Télécharger l'image officielle de Jenkins
+docker pull jenkins/jenkins:lts
+
+# 2. Démarrer Jenkins dans un conteneur
+docker run -d --name jenkins-container -p 8080:8080 -p 50000:50000 jenkins/jenkins:lts
+
+# 3. Vérifier les logs pour récupérer le mot de passe initial
+docker logs jenkins-container
+
+# 4. Accéder à Jenkins via le navigateur
+# Ouvrir : http://localhost:8080
+
+# 5. Arrêter Jenkins
+docker stop jenkins-container
+
+# 6. Supprimer le conteneur
+docker rm jenkins-container

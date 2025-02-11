@@ -1,0 +1,29 @@
+# 1. Télécharger l'image Tomcat
+docker pull tomcat:latest
+
+# 2. Télécharger l'archive Jenkins .war
+wget -O jenkins.war https://get.jenkins.io/war-stable/latest/jenkins.war
+
+# 3. Créer un fichier Dockerfile
+nano Dockerfile
+
+# 4. Construire l'image Docker personnalisée
+docker build -t custom-jenkins .
+
+# 5. Démarrer le conteneur Jenkins-Tomcat
+docker run -d --name jenkins-tomcat -p 8080:8080 custom-jenkins
+
+# 6. Vérifier si le conteneur fonctionne
+docker ps
+
+# 7. Accéder à Jenkins via le navigateur
+Ouvrir : http://localhost:8080/jenkins
+
+# 8. Arrêter le conteneur
+docker stop jenkins-tomcat
+
+# 9. Supprimer le conteneur
+docker rm jenkins-tomcat
+
+# 10. Supprimer l’image Docker
+docker rmi custom-jenkins

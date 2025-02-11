@@ -1,0 +1,29 @@
+.TH my_shell 1 "Février 2025" "MiniShell" "Commandes utilisateur"
+.SH NOM
+my_shell \- Un shell Unix simplifié
+
+.SH SYNOPSIS
+.B my_shell
+.RI [\-c commande]
+
+.SH DESCRIPTION
+.B my_shell
+est un shell simplifié qui prend en charge les commandes Unix de base, les tubes (pipes), les redirections, l’exécution en arrière-plan, et plusieurs commandes internes.
+
+.SH OPTIONS
+.TP
+.B \-c "commande"
+Exécute la commande spécifiée en mode batch.
+
+.SH EXEMPLES
+Exécution interactive :
+.B my_shell
+
+Exécuter une commande :
+.B my_shell -c "ls -l | grep txt"
+
+.SH AUTEUR
+Développé par **Votre Nom**.
+
+.SH VOIR AUSSI
+.BR bash (1), sh (1)

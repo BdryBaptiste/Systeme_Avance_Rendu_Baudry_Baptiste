@@ -1,0 +1,13 @@
+digraph "/mnt/c/Users/BaptisteBaudry/Documents/COURS/Système avancé/Proj_MiniShell/src/alias.h"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="/mnt/c/Users/BaptisteBaudry\l/Documents/COURS/Système\l avancé/Proj_MiniShell/src/alias.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Fonctions de gestion des alias."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="/mnt/c/Users/BaptisteBaudry\l/Documents/COURS/Système\l avancé/Proj_MiniShell/src/alias.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$alias_8c.html",tooltip="Gestion des alias."];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="/mnt/c/Users/BaptisteBaudry\l/Documents/COURS/Système\l avancé/Proj_MiniShell/src\l/execute.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$execute_8c.html",tooltip="Fonctions d'exécution des commandes."];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="/mnt/c/Users/BaptisteBaudry\l/Documents/COURS/Système\l avancé/Proj_MiniShell/src/shell.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$shell_8c.html",tooltip="Fonctions principales du shell."];
+}
